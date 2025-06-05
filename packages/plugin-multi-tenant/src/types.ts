@@ -41,6 +41,13 @@ export type MultiTenantPluginConfig<ConfigTypes = unknown> = {
        * @default true
        */
       useTenantAccess?: boolean
+      /**
+       * Set to `false` to allow skipping the tenant field (e.g. during creation)
+       *
+       * @default true
+       */
+      requireTenantId?: boolean
+
     }
   }
   /**

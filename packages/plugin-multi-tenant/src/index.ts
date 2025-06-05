@@ -279,6 +279,7 @@ export const multiTenantPlugin =
             debug: pluginConfig.debug,
             tenantsCollectionSlug,
             unique: isGlobal,
+            requireTenantId: pluginConfig.collections[collection.slug]?.requireTenantId !== false
           }),
         )
 
